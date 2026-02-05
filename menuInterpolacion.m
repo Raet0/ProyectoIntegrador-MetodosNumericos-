@@ -99,7 +99,7 @@ function ejecutarInterpolacionLineal()
     % Graficar
     respuesta = input('\n¿Desea graficar los datos y la interpolación? (s/n): ', 's');
     if strcmpi(respuesta, 's')
-        visualizarInterpolacion(x, y, xi, yi, 'Interpolación Lineal');
+        graficarInterpolacion(x, y, xi, yi, 'Interpolación Lineal');
     end
     
     input('Presione ENTER para continuar...');
@@ -142,7 +142,7 @@ function ejecutarInterpolacionPolinomial()
     % Graficar
     respuesta = input('\n¿Desea graficar los datos y la interpolación? (s/n): ', 's');
     if strcmpi(respuesta, 's')
-        visualizarInterpolacion(x, y, xi, yi, 'Interpolación Polinomial');
+        graficarInterpolacion(x, y, xi, yi, 'Interpolación Polinomial');
     end
     
     input('Presione ENTER para continuar...');
@@ -184,7 +184,7 @@ function ejecutarInterpolacionLagrange()
     % Graficar
     respuesta = input('\n¿Desea graficar los datos y la interpolación? (s/n): ', 's');
     if strcmpi(respuesta, 's')
-        visualizarInterpolacion(x, y, xi, yi, 'Interpolación de Lagrange');
+        graficarInterpolacion(x, y, xi, yi, 'Interpolación de Lagrange');
     end
     
     input('Presione ENTER para continuar...');
@@ -243,7 +243,7 @@ function ejecutarTrazadoresCubicos()
     % Graficar
     respuesta = input('\n¿Desea graficar los splines? (s/n): ', 's');
     if strcmpi(respuesta, 's')
-        visualizarInterpolacion(x, y, mean(xi), mean(yi), 'Trazadores Cúbicos (Splines)');
+        graficarInterpolacion(x, y, mean(xi), mean(yi), 'Trazadores Cúbicos (Splines)');
     end
     
     input('Presione ENTER para continuar...');
