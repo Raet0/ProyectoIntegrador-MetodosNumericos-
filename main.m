@@ -1,6 +1,7 @@
 clear; %borrar varriables
 close all; %cierra figuras
 clc; % limpia terminal
+addpath(genpath(pwd)); % Agrega todas las subcarpetas del proyecto al Path de MATLAB
 
 %  variable para que el programa siga en pie hasta que el usuario decidad salir
 continuar  = true;
